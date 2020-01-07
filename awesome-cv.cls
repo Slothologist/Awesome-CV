@@ -145,6 +145,10 @@
 \definecolor{awesome-nephritis}{HTML}{27AE60}
 \definecolor{awesome-concrete}{HTML}{95A5A6}
 \definecolor{awesome-darknight}{HTML}{131A28}
+\definecolor{slothologist-deepblue}{HTML}{0000FF}
+\definecolor{slothologist-royalblue}{HTML}{4169E1}
+\definecolor{slothologist-mutedblue}{HTML}{4878D0}
+\definecolor{slothologist-test}{HTML}{88C0D0}
 \colorlet{awesome}{awesome-red}
 
 % Boolean value to switch section color highlighting
@@ -152,8 +156,8 @@
 \setbool{acvSectionColorHighlight}{true}
 
 % Awesome section color
-\def\@sectioncolor#1#2#3{%
-  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+\def\@sectioncolor#1{%
+  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1}}{#1}%
 }
 
 
